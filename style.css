@@ -15,14 +15,46 @@
 }
 
 body {
-  width: 100%;
   background-image: linear-gradient(#292929, #1d1d1d);
   min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; /* changed default font size to 14px to look like PSD */
+  color: var(--tajam_txt_dark);
 }
 
 .wrapper {
+  width: 100%;
+  position: absolute;
+}
+
+.container {
   max-width: 1600px; /* maximum widith of content of page */
-  margin: 0 auto; /* this puts content of page in center position */
+  margin: 0 auto; /* puts content in the center of page */
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 15px;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid var(--tajam_teal);
+  color: var(--tajam_teal);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  color: var(--tajam_blue);
+  border: 1px solid var(--tajam_blue);
+  transform: scale(1.1);
 }
 
 /* ===============
