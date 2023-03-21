@@ -74,14 +74,92 @@ button:hover {
 ================= */
 .expertise {
   background-color: var(--tajam_txt_light);
+  padding: 2rem 0;
+}
+
+.expertise__hgroup {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.expertise__hgroup-h {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+}
+
+.expertise__hgroup::after {
+  content: "";
+  background-color: #bfbec3;
+  height: 2px;
+  width: 3rem;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.expertise__container {
+  /* padding: 2rem 0; */
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 902px;
+  background-color: #ededed;
+  gap: 1px;
+  place-content: center;
+}
+
+@media only screen and (max-width: 901px) {
+  .expertise__container {
+    max-width: 601px;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .expertise__container {
+    max-width: 300px;
+  }
+}
+
+.expertise__card {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 2rem;
+  background-color: var(--tajam_txt_light);
+}
+
+.expertise__card:nth-child(odd) {
+  /* border: 1px solid #ededed; */
 }
 
 .expertise__card-icon {
-  /* ä background-image: linear-gradient( */
-  /* to right,
-    var(--tajam_teal),
-    var(--tajam_blue)
-  ); */
+  height: 50px;
+  max-width: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.expertise__card-heading {
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+
+.expertise__card-text {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666666;
 }
 
 /* ===============
