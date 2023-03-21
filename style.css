@@ -4,9 +4,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   --tajam_teal: #0de2d2;
   --tajam_blue: #52a9cf;
   --tajam_black: #1d1d1d;
@@ -16,19 +16,20 @@
 
 body {
   background-image: linear-gradient(#292929, #1d1d1d);
+  color: var(--tajam_txt_dark);
   font-family: "Roboto", sans-serif;
   font-size: 14px; /* changed default font size to 14px to look like PSD */
-  color: var(--tajam_txt_dark);
+  min-height: 100vh;
 }
 
 .wrapper {
-  width: 100%;
   position: absolute;
+  width: 100%;
 }
 
 .container {
-  max-width: 1600px; /* maximum widith of content of page */
   margin: 0 auto; /* puts content in the center of page */
+  max-width: 1600px; /* maximum widith of content of page */
 }
 
 h1 {
@@ -44,21 +45,21 @@ h2 {
 }
 
 button {
-  padding: 10px 15px;
-  font-family: "Hammersmith One", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  text-transform: uppercase;
   background: transparent;
   border: 1px solid var(--tajam_teal);
   color: var(--tajam_teal);
   cursor: pointer;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px;
+  text-transform: uppercase;
   transition: all 0.5s ease-in-out;
 }
 
 button:hover {
-  color: var(--tajam_blue);
   border: 1px solid var(--tajam_blue);
+  color: var(--tajam_blue);
   transform: scale(1.1);
 }
 
@@ -201,6 +202,87 @@ header p {
 /* ===============
     Expertise
 ================= */
+.expertise {
+  background-color: var(--tajam_txt_light);
+  padding: 2rem 0;
+}
+
+.expertise__hgroup {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.expertise__hgroup-h {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+}
+
+.expertise__hgroup::after {
+  content: "";
+  background-color: #bfbec3;
+  height: 2px;
+  width: 3rem;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.expertise__container {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  max-width: 902px;
+  background-color: #ededed;
+  gap: 1px;
+  place-content: center;
+}
+
+@media only screen and (max-width: 901px) {
+  .expertise__container {
+    max-width: 601px;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .expertise__container {
+    max-width: 300px;
+  }
+}
+
+.expertise__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 2rem;
+  background-color: var(--tajam_txt_light);
+}
+
+.expertise__card-icon {
+  height: 50px;
+  max-width: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.expertise__card-heading {
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+
+.expertise__card-text {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666666;
+}
 
 /* ===============
         Team
