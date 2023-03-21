@@ -16,7 +16,6 @@
 
 body {
   background-image: linear-gradient(#292929, #1d1d1d);
-  min-height: 100vh;
   font-family: "Roboto", sans-serif;
   font-size: 14px; /* changed default font size to 14px to look like PSD */
   color: var(--tajam_txt_dark);
@@ -66,12 +65,11 @@ button:hover {
 /* ===============
     Header
 ================= */
-header{
+header {
   background-image: url(images/bgk-header.png);
-  padding-bottom: 35rem;
   width: 100%;
+  height: 670px;
   background-repeat: no-repeat;
-
 }
 header nav {
   display: flex;
@@ -79,34 +77,38 @@ header nav {
   justify-content: space-evenly;
   padding-top: 1rem;
 }
-nav div{
+nav div {
   display: flex;
   align-items: center;
 }
 
-nav svg{
+nav svg {
   width: 50px;
   height: 50px;
 }
 nav a {
   color: white;
   text-decoration: none;
-  padding: 0em .75em 0em .75em;
+  padding: 0em 0.75em 0em 0.75em;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: bolder;
 }
-nav a:hover{
-  color: var(--tajam_teal)
+nav a:hover {
+  color: var(--tajam_teal);
 }
 nav h3 {
-  background: -webkit-linear-gradient(45deg,var(--tajam_teal),var(--tajam_blue));
+  background: -webkit-linear-gradient(
+    45deg,
+    var(--tajam_teal),
+    var(--tajam_blue)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 300;
   font-size: 1.5rem;
 }
-.header_welcoming_msg{
+.header_welcoming_msg {
   display: flex;
   width: 50%;
   padding-top: 15em;
@@ -114,28 +116,87 @@ nav h3 {
   align-items: center;
   margin: 0 auto;
 }
-header h1{
+header h1 {
   color: white;
   border-bottom: #0de2d2 solid 1px;
-  padding: 1em 0em ;
-  }
-header p{
+  padding: 1em 0em;
+}
+header p {
   color: white;
   text-align: center;
   padding: 2.5em;
   font-weight: 300;
   line-height: 1.5em;
-
-  
 }
 
 /* ===============
        Story
 ================= */
+.story {
+  width: 100%;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.story_txt {
+  width: 35%;
+}
+
+.story_txt > * {
+  margin: 20px 0;
+}
 
 /* ===============
         video
 ================= */
+
+.video {
+  width: 100%;
+  height: 550px;
+  background-image: url(images/bgk-middle.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play {
+  display: block;
+  width: 103px;
+  height: 103px;
+}
+
+.video a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-image: url(images/play.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+}
+
+.video a span {
+  font-family: "Hammersmith One", sans-serif;
+  color: var(--tajam_txt_light);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.video a:hover {
+  background-image: url(images/play_hover.png);
+}
+
+.video a:hover span {
+  color: var(--tajam_teal);
+}
 
 /* ===============
     Expertise
