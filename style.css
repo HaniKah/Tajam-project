@@ -68,8 +68,8 @@ button:hover {
 ================= */
 header {
   background-image: url(images/bgk-header.png);
-  padding-bottom: 35rem;
   width: 100%;
+  height: 670px;
   background-repeat: no-repeat;
 }
 header nav {
@@ -133,10 +133,71 @@ header p {
 /* ===============
        Story
 ================= */
+.story {
+  width: 100%;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.story_txt {
+  width: 35%;
+}
+
+.story_txt > * {
+  margin: 20px 0;
+}
 
 /* ===============
         video
 ================= */
+
+.video {
+  width: 100%;
+  height: 550px;
+  background-image: url(images/bgk-middle.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play {
+  display: block;
+  width: 103px;
+  height: 103px;
+}
+
+.video a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-image: url(images/play.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+}
+
+.video a span {
+  font-family: "Hammersmith One", sans-serif;
+  color: var(--tajam_txt_light);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.video a:hover {
+  background-image: url(images/play_hover.png);
+}
+
+.video a:hover span {
+  color: var(--tajam_teal);
+}
 
 /* ===============
     Expertise
@@ -236,5 +297,97 @@ header p {
 ================= */
 
 /* ===============
-     Media Q
+      Media Q
 ================= */
+
+@media (max-width: 992px) {
+  /* media query for Tablet */
+  /* ===============
+    Header
+  ================= */
+
+  /* ===============
+        Story
+  ================= */
+  .story {
+    gap: 40px;
+  }
+  .story_txt {
+    width: 50%;
+  }
+
+  /* ===============
+        video
+  ================= */
+  .video {
+    height: 450px;
+  }
+
+  /* ===============
+    Expertise
+  ================= */
+
+  /* ===============
+        Team
+  ================= */
+
+  /* ===============
+      contact
+  ================= */
+
+  /* ===============
+      footer
+  ================= */
+
+  /* ===============
+      Media Q
+  ================= */
+}
+
+@media (max-width: 576px) {
+  /* media query for smartphone */
+  /* ===============
+    Header
+  ================= */
+
+  /* ===============
+        Story
+  ================= */
+  .story {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .story_txt {
+    width: 80%;
+  }
+
+  /* ===============
+        video
+  ================= */
+  .video {
+    height: 400px;
+  }
+
+  /* ===============
+    Expertise
+  ================= */
+
+  /* ===============
+        Team
+  ================= */
+
+  /* ===============
+      contact
+  ================= */
+
+  /* ===============
+      footer
+  ================= */
+
+  /* ===============
+      Media Q
+  ================= */
+}
