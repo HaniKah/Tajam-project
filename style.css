@@ -15,7 +15,7 @@
 }
 
 body {
-  /* background-image: linear-gradient(#292929, #1d1d1d); */
+  background-image: linear-gradient(#292929, #1d1d1d);
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
   font-size: 14px; /* changed default font size to 14px to look like PSD */
