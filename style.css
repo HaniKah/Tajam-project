@@ -4,9 +4,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   --tajam_teal: #0de2d2;
   --tajam_blue: #52a9cf;
   --tajam_black: #1d1d1d;
@@ -16,20 +16,19 @@
 
 body {
   background-image: linear-gradient(#292929, #1d1d1d);
-  color: var(--tajam_txt_dark);
   font-family: "Roboto", sans-serif;
   font-size: 14px; /* changed default font size to 14px to look like PSD */
-  min-height: 100vh;
+  color: var(--tajam_txt_dark);
 }
 
 .wrapper {
-  position: absolute;
   width: 100%;
+  position: absolute;
 }
 
 .container {
-  margin: 0 auto; /* puts content in the center of page */
   max-width: 1600px; /* maximum widith of content of page */
+  margin: 0 auto; /* puts content in the center of page */
 }
 
 h1 {
@@ -45,21 +44,21 @@ h2 {
 }
 
 button {
+  padding: 10px 15px;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
   background: transparent;
   border: 1px solid var(--tajam_teal);
   color: var(--tajam_teal);
   cursor: pointer;
-  font-family: "Hammersmith One", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 10px 15px;
-  text-transform: uppercase;
   transition: all 0.5s ease-in-out;
 }
 
 button:hover {
-  border: 1px solid var(--tajam_blue);
   color: var(--tajam_blue);
+  border: 1px solid var(--tajam_blue);
   transform: scale(1.1);
 }
 
@@ -90,7 +89,7 @@ nav svg {
 nav a {
   color: white;
   text-decoration: none;
-  padding: 0em 0.75em 0em 0.75em;
+  padding: 0.75em 0;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: bolder;
@@ -119,8 +118,12 @@ nav h3 {
 }
 header h1 {
   color: white;
-  border-bottom: #0de2d2 solid 1px;
   padding: 1em 0em;
+}
+header hr {
+  width: 100px;
+  border: 1px solid var(--tajam_teal);
+  height: 1px;
 }
 header p {
   color: white;
@@ -131,7 +134,7 @@ header p {
 }
 
 /* ===============
-       Story
+        Story
 ================= */
 .story {
   width: 100%;
@@ -188,6 +191,7 @@ header p {
   font-family: "Hammersmith One", sans-serif;
   color: var(--tajam_txt_light);
   text-transform: uppercase;
+  text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
@@ -202,6 +206,7 @@ header p {
 /* ===============
     Expertise
 ================= */
+
 .expertise {
   background-color: var(--tajam_txt_light);
   padding: 2rem 0;
@@ -243,18 +248,6 @@ header p {
   place-content: center;
 }
 
-@media only screen and (max-width: 901px) {
-  .expertise__container {
-    max-width: 601px;
-  }
-}
-
-@media only screen and (max-width: 601px) {
-  .expertise__container {
-    max-width: 300px;
-  }
-}
-
 .expertise__card {
   display: flex;
   flex-direction: column;
@@ -283,7 +276,6 @@ header p {
   font-size: 0.8rem;
   color: #666666;
 }
-
 /* ===============
         Team
 ================= */
@@ -326,6 +318,9 @@ header p {
   /* ===============
     Expertise
   ================= */
+  .expertise__container {
+    max-width: 601px;
+  }
 
   /* ===============
         Team
@@ -374,6 +369,9 @@ header p {
   /* ===============
     Expertise
   ================= */
+  .expertise__container {
+    max-width: 300px;
+  }
 
   /* ===============
         Team
