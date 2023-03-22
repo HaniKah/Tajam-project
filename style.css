@@ -113,6 +113,7 @@ nav h3 {
   font-weight: 300;
   font-size: 1.5rem;
 }
+
 .header_welcoming_msg {
   display: flex;
   width: 50%;
@@ -137,6 +138,83 @@ header p {
   padding: 2.5em;
   font-weight: 300;
   line-height: 1.5em;
+}
+
+/* ============================
+      Header Mobile menu
+============================ */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3d ease-in-out;
+  transition: all 0.3d ease-in-out;
+  background-color: #fff;
+}
+
+.mobile_menu {
+  position: absolute;
+  right: 0;
+  top: 75px;
+  width: 0;
+  height: 85vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  transition: width 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mobile_menu.active {
+  width: 300px;
+}
+
+.mobile_menu div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 30px;
+  background-image: linear-gradient(#2c2749, #100b30);
+  border-radius: 10px;
+}
+
+.mobile_menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile_menu ul li {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.mobile_menu ul li:last-child {
+  margin-bottom: 10px;
+}
+
+.mobile_menu ul li a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.mobile_menu ul li a:hover {
+  color: var(--tajam_teal);
 }
 
 /* ===============
@@ -360,6 +438,7 @@ header p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
+  justify-content: space-between;
 }
 
 .contact_grid_item {
@@ -384,6 +463,27 @@ header p {
   ================= */
   .header_welcoming_msg {
     width: 85%;
+  }
+  header nav {
+    background: rgba(0, 0, 0, 0.2);
+    height: 85px;
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+  header nav ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   /* ===============
         Story
@@ -444,6 +544,9 @@ header p {
   ================= */
   .header_welcoming_msg {
     width: 85%;
+  }
+  .mobile_menu.active {
+    width: 90%;
   }
 
   /* ===============
