@@ -86,6 +86,7 @@ nav svg {
   width: 60px;
   height: 50px;
 }
+
 nav ul {
   display: flex;
   gap: 1em;
@@ -384,7 +385,6 @@ header p {
   .header_welcoming_msg {
     width: 85%;
   }
-
   /* ===============
         Story
   ================= */
