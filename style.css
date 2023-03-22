@@ -83,16 +83,20 @@ nav div {
 }
 
 nav svg {
-  width: 50px;
+  width: 60px;
   height: 50px;
+}
+nav ul {
+  display: flex;
+  gap: 1em;
 }
 nav a {
   color: white;
   text-decoration: none;
-  padding: 0 0.75em;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: bolder;
+  text-transform: uppercase;
 }
 nav a:hover {
   color: var(--tajam_teal);
@@ -111,7 +115,7 @@ nav h3 {
 .header_welcoming_msg {
   display: flex;
   width: 50%;
-  padding-top: 15em;
+  padding-top: 110px;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
@@ -119,6 +123,7 @@ nav h3 {
 header h1 {
   color: white;
   padding: 1em 0em;
+  text-align: center;
 }
 header hr {
   width: 100px;
@@ -376,6 +381,9 @@ header p {
   /* ===============
     Header
   ================= */
+  .header_welcoming_msg {
+    width: 85%;
+  }
 
   /* ===============
         Story
@@ -434,6 +442,9 @@ header p {
   /* ===============
     Header
   ================= */
+  .header_welcoming_msg {
+    width: 85%;
+  }
 
   /* ===============
         Story
