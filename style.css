@@ -191,7 +191,7 @@ header p {
   align-items: center;
   padding: 30px;
   margin: 30px;
-  background-image: linear-gradient(#2c2749, #100b30);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   transform: translateX(250px);
   transition: all 0.5s ease-in;
