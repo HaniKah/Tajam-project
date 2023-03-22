@@ -77,6 +77,59 @@ button:hover {
         Team
 ================= */
 
+.team {
+  background-image: url(images/bgk-header.png);
+  background-size: cover;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.Lorem {
+  color: beige;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ul-team {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.team-image {
+  background-color: oldlace;
+  width: 100px;
+  height: 110px;
+}
+
+ul p {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  border: oldlace 1px solid;
+  padding-top: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.p-button {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 /* ===============
       contact
 ================= */
@@ -85,6 +138,31 @@ button:hover {
       footer
 ================= */
 
+.footer {
+  background-image: url(./images/bgk-footer.png);
+  background-size: cover;
+  height: 400px;
+}
+
+.footer-body {
+  color: white;
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-body p {
+  width: 250px;
+}
+
+.nav-p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a {
+  margin-right: 30px;
+}
 /* ===============
      Media Q
 ================= */
