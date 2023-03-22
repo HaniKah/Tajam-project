@@ -80,7 +80,7 @@ header nav {
 .header_logo {
   display: flex;
   align-items: center;
-  transition: all 0.8s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .header_logo.active {
@@ -172,7 +172,7 @@ header p {
   height: 85vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(15px);
@@ -185,6 +185,7 @@ header p {
 }
 
 .header_logo_mobile {
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,7 +194,7 @@ header p {
   background-image: linear-gradient(#2c2749, #100b30);
   border-radius: 10px;
   transform: translateX(250px);
-  transition: all 0.8s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .header_logo_mobile.active {
@@ -226,6 +227,46 @@ header p {
 
 .mobile_menu ul li a:hover {
   color: var(--tajam_teal);
+}
+
+.mobile_menu_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+}
+
+.mobile_menu_info svg {
+  width: 15px;
+  height: 18px;
+}
+
+.mobile_menu_info p {
+  width: 85%;
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+  color: #acabb1;
+}
+
+.mobile_menu_info_title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile_menu_info_title h3 {
+  font-size: 18px;
+}
+
+.mobile_menu_info_title hr {
+  width: 50px;
 }
 
 /* ===============
@@ -484,6 +525,9 @@ header p {
   header nav ul {
     display: none;
   }
+  .info {
+    display: block;
+  }
   .hamburger {
     display: block;
   }
@@ -491,10 +535,10 @@ header p {
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
   }
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
   }
   /* ===============
         Story
@@ -558,6 +602,9 @@ header p {
   }
   .mobile_menu.active {
     width: 90%;
+  }
+  .mobile_menu ul li {
+    padding: 10px;
   }
 
   /* ===============
