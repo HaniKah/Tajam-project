@@ -103,8 +103,10 @@ nav a {
   font-size: 0.75rem;
   font-weight: bolder;
   text-transform: uppercase;
+  transition: all 0.5s ease-in;
 }
 nav a:hover {
+  transform: translateY(-5px);
   color: var(--tajam_teal);
 }
 nav h3 {
@@ -151,7 +153,12 @@ header p {
 
 .hamburger {
   display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
   cursor: pointer;
+  padding: 29px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .bar {
@@ -165,7 +172,7 @@ header p {
 }
 
 .mobile_menu {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 75px;
   width: 0;
@@ -581,6 +588,7 @@ header p {
   .contact_form {
     background-color: rgba(237, 237, 237, 0.5);
     padding: 70px;
+    margin: 0;
   }
 
   /* ===============
