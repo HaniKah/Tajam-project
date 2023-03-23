@@ -15,14 +15,13 @@
 }
 
 body {
-  background-image: linear-gradient(#292929, #1d1d1d);
-  min-height: 100vh;
   font-family: "Roboto", sans-serif;
   font-size: 14px; /* changed default font size to 14px to look like PSD */
   color: var(--tajam_txt_dark);
 }
 
 .wrapper {
+  background-image: linear-gradient(#292929, #1d1d1d);
   width: 100%;
   position: absolute;
 }
@@ -36,6 +35,12 @@ h1 {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   font-weight: bold;
+}
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 button {
@@ -60,19 +65,224 @@ button:hover {
 /* ===============
     Header
 ================= */
+header {
+  background-image: url(images/bgk-header.png);
+  width: 100%;
+  height: 670px;
+  background-repeat: no-repeat;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav svg {
+  width: 60px;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1em;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: var(--tajam_teal);
+}
+nav h3 {
+  background: -webkit-linear-gradient(
+    45deg,
+    var(--tajam_teal),
+    var(--tajam_blue)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.header_welcoming_msg {
+  display: flex;
+  width: 50%;
+  padding-top: 110px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+header h1 {
+  color: white;
+  padding: 1em 0em;
+  text-align: center;
+}
+header hr {
+  width: 100px;
+  border: 1px solid var(--tajam_teal);
+  height: 1px;
+}
+header p {
+  color: white;
+  text-align: center;
+  padding: 2.5em;
+  font-weight: 300;
+  line-height: 1.5em;
+}
 
 /* ===============
-       Story
+        Story
 ================= */
+.story {
+  width: 100%;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background: var(--tajam_txt_light);
+}
+
+.story_txt {
+  width: 35%;
+}
+
+.story_txt > * {
+  margin: 20px 0;
+}
 
 /* ===============
         video
 ================= */
 
+.video {
+  width: 100%;
+  height: 550px;
+  background-image: url(images/bgk-middle.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play {
+  display: block;
+  width: 103px;
+  height: 103px;
+}
+
+.video a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  background-image: url(images/play.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+}
+
+.video a span {
+  font-family: "Hammersmith One", sans-serif;
+  color: var(--tajam_txt_light);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.video a:hover {
+  background-image: url(images/play_hover.png);
+}
+
+.video a:hover span {
+  color: var(--tajam_teal);
+}
+
 /* ===============
     Expertise
 ================= */
 
+.expertise {
+  background-color: var(--tajam_txt_light);
+  padding: 2rem 0;
+}
+
+.expertise__hgroup {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.expertise__hgroup-h {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+}
+
+.expertise__hgroup::after {
+  content: "";
+  background-color: #bfbec3;
+  height: 2px;
+  width: 3rem;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.expertise__container {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  max-width: 902px;
+  background-color: #ededed;
+  gap: 1px;
+  place-content: center;
+}
+
+.expertise__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 2rem;
+  background-color: var(--tajam_txt_light);
+}
+
+.expertise__card-icon {
+  height: 50px;
+  max-width: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.expertise__card-heading {
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+
+.expertise__card-text {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666666;
+}
 /* ===============
         Team
 ================= */
@@ -84,42 +294,58 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
+
 
 .team h3 {
   text-align: center;
   margin-top: 30px;
+  
+  color: oldlace;
 }
 
 .Lorem {
-  color: beige;
+  color:  oldlace;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 75px;
 }
 
 .ul-team {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 30px;
+  color: oldlace;
+  max-width: 900%;
+  margin-bottom: 50p;
+  flex-wrap: wrap;
 }
+
+
 
 .team-image {
   background-color: oldlace;
-  width: 100px;
-  height: 110px;
+  width: 250px;px;
+  height:240px;
 }
 
-ul p {
-  width: 100px;
-  height: 50px;
+ul .p {
+  width: 250px;
+  height: 70px;
   text-align: center;
   border: oldlace 1px solid;
   padding-top: 10px;
+ 
 }
 
 ul li {
   list-style: none;
 }
+
+.Become-part {
+
+  color: oldlace;
+}  
 
 .p-button {
   margin-bottom: 30px;
@@ -133,6 +359,84 @@ ul li {
 /* ===============
       contact
 ================= */
+.contact {
+  width: 100%;
+  background: var(--tajam_txt_light);
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.contact h2 {
+  margin-bottom: 80px;
+}
+
+.contact_form {
+  width: 450px;
+  margin-right: 50px;
+}
+
+.contact_form input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #e5e5e5;
+  padding: 8px;
+  margin-bottom: 15px;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+}
+
+.contact_form input:hover {
+  border: 1px solid var(--tajam_teal);
+}
+
+.contact_form textarea {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #e5e5e5;
+  padding: 8px;
+  margin-bottom: 15px;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+}
+
+.contact_form textarea:hover {
+  border: 1px solid var(--tajam_teal);
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #acabb1;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #acabb1;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #acabb1;
+}
+
+.contact_client {
+  width: 450px;
+}
+
+.contact_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.contact_grid_item {
+  display: flex;
+  width: 162px;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ===============
       footer
@@ -142,27 +446,225 @@ ul li {
   background-image: url(./images/bgk-footer.png);
   background-size: cover;
   height: 400px;
+  width: 100%;
 }
 
 .footer-body {
-  color: white;
-  margin: 30px;
+  color:  oldlace;
+  padding: 30px;
   display: flex;
   justify-content: space-around;
+  max-width: 900%;
 }
+
+
+
+.footer-body .tow h3{
+  margin-bottom: 30px;
+}
+
+.footer-body .tow p{
+  margin-bottom: 30px;
+}
+
+
 
 .footer-body p {
+  color: oldlace ;
   width: 250px;
+  
 }
 
-.nav-p {
+.three {
+  position: relative;
+}
+.footer-body .three p{
+
+  border: white solid 1px;
+  width: 180px;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  text-align: center;
+  opacity: 50%;
+
+}
+
+#paper {
+  border: wheat 1px solid;
+  position: absolute;
+  left: 189px;
+  top: 55px;
+
+  background-color: oldlace;
+  opacity: 50%;
+  border-radius: 3px;
+}
+
+.p-nav{
+
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  color: oldlace;
+
+  
 }
 
-.nav a {
-  margin-right: 30px;
+.p-nav nav{
+
+  position: relative;
+  right:110px;
+  
 }
+
+.p-nav nav a {
+margin: 10px;
+}
+.p-nav p {
+
+  position: relative;
+  left: 100px;
+  
+
+
 /* ===============
-     Media Q
+      Media Q
 ================= */
+
+@media (max-width: 992px) {
+  /* media query for Tablet */
+  /* ===============
+    Header
+  ================= */
+  .header_welcoming_msg {
+    width: 85%;
+  }
+  /* ===============
+        Story
+  ================= */
+  .story {
+    gap: 40px;
+  }
+  .story_txt {
+    width: 50%;
+  }
+
+  /* ===============
+        video
+  ================= */
+  .video {
+    height: 450px;
+  }
+
+  /* ===============
+    Expertise
+  ================= */
+  .expertise__container {
+    max-width: 601px;
+  }
+
+  /* ===============
+        Team
+  ================= */
+
+  /* ===============
+      contact
+  ================= */
+  .contact {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  .contact_form {
+    background-color: rgba(237, 237, 237, 0.5);
+    padding: 70px;
+  }
+
+  /* ===============
+      footer
+  ================= */
+
+  /* ===============
+      Media Q
+  ================= */
+}
+
+@media (max-width: 576px) {
+  /* media query for smartphone */
+  /* ===============
+    Header
+  ================= */
+  .header_welcoming_msg {
+    width: 85%;
+  }
+
+  /* ===============
+        Story
+  ================= */
+  .story {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .story_txt {
+    width: 80%;
+  }
+
+  /* ===============
+        video
+  ================= */
+  .video {
+    height: 400px;
+  }
+
+  /* ===============
+    Expertise
+  ================= */
+  .expertise__container {
+    max-width: 300px;
+  }
+
+  /* ===============
+        Team
+  ================= */
+
+  /* ===============
+      contact
+  ================= */
+  .contact h2 {
+    text-align: center;
+  }
+
+  .contact_form {
+    width: 90%;
+    margin: 0;
+    padding: 20px;
+  }
+  .contact_client {
+    width: 300px;
+  }
+  .contact_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+  .contact_grid_item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ===============
+      footer
+  ================= */
+
+  /* ===============
+      Media Q
+  ================= */
+}
