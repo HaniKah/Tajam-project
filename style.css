@@ -604,6 +604,15 @@ header p {
   ================= */
 }
 
+@media (max-width: 600px) {
+  /* ===============
+    Expertise
+  ================= */
+  .expertise__container {
+    max-width: 300px;
+  }
+}
+
 @media (max-width: 576px) {
   /* media query for smartphone */
   /* ===============
@@ -643,9 +652,14 @@ header p {
   /* ===============
     Expertise
   ================= */
-  .expertise__container {
-    max-width: 300px;
+
+  .expertise__hgroup-text {
+    padding: 0 1rem;
   }
+
+  /* .expertise__container {
+    max-width: 300px;
+  } */
 
   /* ===============
         Team
