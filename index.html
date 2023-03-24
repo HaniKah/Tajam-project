@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <title>Tajam | Creative Agancy</title>
-  </head>
-  <body>
-    <container class="wrapper">
-      <div class="container">
-        <!-- this is a general container that helps style the general look(width) of the website -->
-
         <header class="header" id="header">
           <!-- Hani , your code goes here -->
           <nav>
@@ -192,8 +179,45 @@
           </div>
         </section>
 
-        <section class="team" id="team">
+        <section class="team">
           <!-- Ali, your code goes here -->
+          <h3>MEET OUR AMAZING TEAM</h3>
+          <P class="Lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit</P>
+          <ul class="ul-team">
+            <li>
+              <div class="team-image"> </div>
+              <div class="p">
+                <p>Hani</p>
+                <p>CEO & FOUNDER</p>
+              </div>
+            </li>
+            <li>
+              <div class="team-image"></div>
+              <div class="p">
+                <p>Ali</p>
+                <p>ENGINEERING</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="team-image"></div>
+              <div class="p">
+                <p>Stephan</p>
+                <p>DESIGNER</p>
+              </div>
+            </li>
+            <li>
+              <div class="team-image"></div>
+              <div class="p">
+                <p>Miroslav</p>
+                <p>DESIGNER</p>
+              </div>
+            </li>
+          </ul>
+          <div class="p-button">
+            <P class="Become-part">Become part of our dream team, let's join us!</P>
+            <button class="HIRING">WE ARE HIRING</button>
+          </div>
         </section>
 
         <section class="contact" id="people">
@@ -401,7 +425,123 @@
 
         <footer class="footer">
           <!-- Ali, your code goes here -->
-        </footer>
+        
+          <div class="footer-body">
+            <div class="one">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="50"
+                viewBox="0 0 44 50">
+                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="44" height="50"
+                  xlink:href="data:img/png;base64,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" />
+              </svg>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, rem! Aperiam culpa et vero ratione
+                cupiditate quo quasi. Provident fuga quasi quia qui numquam tempore atque aut maxime accusantium aliquid.
+              </p>
+            </div>
+            <div class="tow">
+              <h3>OUR STUDIO</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="19" viewBox="0 0 14 19">
+                <image id="big104" width="14" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAATCAMAAACX3symAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA8FBMVEUAAADw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PAAAABHcn4jAAAATnRSTlMAFZ7v8KIYVZCO7luKhloNhRGj/Gfr7Gv5rIxulZN2g0OEfgI9RQFYUwQ+8qg8sJn2gbK2iANlJideBZZ8em0JBnLNyCEicyAdd6ut0tajgZYEAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAALFJREFUGNNNjek2gmEYRbdKn0yJypQhIiIZQ8bM477/y/HWW1bnx5nWes4DMJZKa2Y8Sx+JmYkkyU06FdN0rGechbw5BpizwPxCMMVSeTHI0jKuwKqVNddhQ9wEq7DlNrUQd9i1Dnvu05CDFBzaaHoErWNODBunehbEcy5sB3N5FejaDtw4/Gurz7cx3cX+3oeePNqNdempx8/lwc2LRWj7Otx48/3DT/7xpd+M4Oc36h92Gxje+sWViAAAAABJRU5ErkJggg=="/>
+              </svg>
+              <p>Ruko cucruk,JI Radio lura dalen No.12-13,Kalideres - jakarta Barat 11480 - Indonesia
+              </p>
+              <svg id="phone35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17"
+                height="17" viewBox="0 0 17 17">
+                <image id="phone351" width="17" height="17"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEUAAADw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PAAAAAGLvOSAAAAQnRSTlMA1i6m6p81XQ6oK0gQVhKR5oAVVWXJxkkdZAM4WhQ+QHR7JmJga6n+m4JEuKFNFxGn1+gGfMUZ1EIlvE+5CCDu2VApLTljAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAI1JREFUGNNVzccOwlAMRFHTIfRO6J3QQgu93///KLJ4IOPFSHMk2yJ6AgT/uoTCEaIaYsQlgQKLpEhKS5qMSDant/IUhKKWElKuaKhSs6kraNBs0VbQoSv0TOkPRIaMhLEBe4IzZSbMDSxYurCyWBvYbF0/dx7e9yJ7Pw5HTr8fZy5Xh9tdvX08eb1V/wCaSBENn8iBdgAAAABJRU5ErkJggg==" />
+              </svg>
+              <p>(+62) 21-221232312</p>
+            </div>
+            <div class="three">
+              <h3>STAY IN TOUCH</h3>
+              <p>Subscribe our newsletter</p>
+              <img id="paper" src="./images/paper122.svg" alt="paper">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="facebook" width="36"
+                height="36" viewBox="0 0 36 36">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-width: 1px;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" cx="18" cy="18" r="17.5" />
+                <image id="facebook25" x="14.5" y="10.5" width="7" height="15"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAPCAMAAAAf3yWMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADvEKCAAAAAKHRSTlMAQLri58sZ7fpV7KOCX5YfdaAmI9Tz98/4zXGwylRWkWWfZJ5oou+TmN+XDQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABUSURBVAjXbcrLAoFQAADRQRQVigglj2L+/wvr7pvN2QywWK6iNWxiNYGt7tIMct0Dh6MW5YlzpZfoSm3oxv2hTdbCU7vp46Xv4Ee/c/Y6BPNf9YcR5A4IeR2CxnsAAAAASUVORK5CYII=" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="youtube" width="36"
+                height="36" viewBox="0 0 36 36">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-width: 1px;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" cx="18" cy="18" r="17.5" />
+                <image id="youtube-2" data-name="youtube" x="9.5" y="12.5" width="17" height="11"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAMAAACu/pY1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAwFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAADHcBeAAAAPnRSTlMAAUm60Nri6Orp5rxSAi73Om/6gYv+fY32KFTJkplDGH74m0L5nB+E/Z2UNghp3JiCOTSxjNdfEe3u+/S4FOcsm3AAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAiElEQVQI12NgZGJmYWVj5+Bk52JjZeHm4WXg47dDAQIMgiBKSFhEFCoixiAOoiQkGaSkISIyDLIgil+OgUFeQRHEVGJQAosoMwCBpAqQqQoVAaphUFPXADI1GbTA5mgz6Ojqgc3RZzAAixgaGUPtMmGQAtOmbDD3mDGYG0tYWFhaqViAgbWNLQAiTiA1/TuCxQAAAABJRU5ErkJggg==" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="twitter" width="36"
+                height="36" viewBox="0 0 36 36">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-width: 1px;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" cx="18" cy="18" r="17.5" />
+                <image id="twitter16" x="11.5" y="12.5" width="14" height="11"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAMAAAB4W0xQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAk1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADRhQNMAAAAL3RSTlMABA0FmNuiKTwP6lXE7yYBihygEHj6s5r+HwjD/BrncofpTPsUbKTMKgtgvNOfVpE96pwAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAbUlEQVQI1zXMaxtCQBCG4ZdCkkMlh7AsSlTm//87Ztnn09zXzC4ME9zhaNnOyYV59pgXWvMDhETRFWDR7Q4jJnokacbMgWdRkq5aX0WZllCfFpq1YrNLYqsVrC7guX+9B9bwUatx+gr5+8/b4QKp4g+JmryojAAAAABJRU5ErkJggg==" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="instagram" width="36"
+                height="36" viewBox="0 0 36 36">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-width: 1px;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" cx="18" cy="18" r="17.5" />
+                <image id="instagram3" x="10.5" y="10.5" width="15" height="15"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA3lBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADyJ1eYAAAASHRSTlMACJjJzMve6+WdDJb1oDvgugTbuc2nx4VKWMi1f22zxmn03Mps+tT5qozY0P374c4C84CBcJnou+IF04aN193f8O7a+KaorRKVmDQDAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAJ1JREFUCNc9y9UWgmAQhdGjYICN3QmoIHYXmOf9n0j415LvYmb2xSASleSYKJ5IKipSDEuTGUghswBzyIcu+NZQFHepXGG1VmcDzYAtAO3g6KDLXn+AoCFHugTDBMfCEyIxhWVj5gjPuVgasIgV1z433ILCkLnbH6gdA59845ymefE3r7hRPKti8g6Fuut6zsPxXPfJF9S3af8zP98fqTwhhXenkJMAAAAASUVORK5CYII=" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="twitter" width="36"
+                height="36" viewBox="0 0 36 36">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-width: 1px;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" cx="18" cy="18" r="17.5" />
+                <image id="twitter16" x="11.5" y="12.5" width="14" height="11"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAMAAAB4W0xQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAk1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADRhQNMAAAAL3RSTlMABA0FmNuiKTwP6lXE7yYBihygEHj6s5r+HwjD/BrncofpTPsUbKTMKgtgvNOfVpE96pwAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAbUlEQVQI1zXMaxtCQBCG4ZdCkkMlh7AsSlTm//87Ztnn09zXzC4ME9zhaNnOyYV59pgXWvMDhETRFWDR7Q4jJnokacbMgWdRkq5aX0WZllCfFpq1YrNLYqsVrC7guX+9B9bwUatx+gr5+8/b4QKp4g+JmryojAAAAABJRU5ErkJggg==" />
+              </svg>
+            </div>
+          </div>
+          <div class="p-nav">
+            <nav class="nav">
+              <a href="">HELP</a>
+              <a href="">TERMS & CONDITION</a>
+              <a href="">PRIVACY</a>
+        </nav>
+                  <P class="p">Copyright 2015-Tajem Creative</P>
+                </div>
+            </div>
+            </footer>
       </div>
     </container>
     <script src="menu.js"></script>
