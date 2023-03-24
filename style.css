@@ -583,6 +583,7 @@ ul li {
 .footer {
   background-image: url(./images/bgk-footer.png);
   background-size: cover;
+  padding-bottom: 50px;
   /* height: 400px; */
   /* width: 100%; */
 }
@@ -637,7 +638,7 @@ ul li {
 
 .p-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   color: oldlace;
 }
 
