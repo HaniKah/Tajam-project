@@ -120,6 +120,7 @@ nav h3 {
     var(--tajam_blue)
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 300;
   font-size: 1.5rem;
@@ -428,6 +429,70 @@ header p {
         Team
 ================= */
 
+.team {
+  background-image: url(images/bgk-header.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 50px;
+}
+
+.team h3 {
+  text-align: center;
+  margin-top: 30px;
+
+  color: oldlace;
+}
+
+.Lorem {
+  color: oldlace;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.ul-team {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: oldlace;
+  max-width: 900%;
+  margin-bottom: 50p;
+  flex-wrap: wrap;
+}
+
+.team-image {
+  background-color: oldlace;
+  width: 250px;
+  height: 240px;
+}
+
+ul .p {
+  width: 250px;
+  height: 70px;
+  text-align: center;
+  border: oldlace 1px solid;
+  padding-top: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.Become-part {
+  color: oldlace;
+}
+
+.p-button {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 /* ===============
       contact
 ================= */
@@ -441,7 +506,7 @@ header p {
 }
 
 .contact h2 {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .contact_form {
@@ -514,6 +579,78 @@ header p {
 /* ===============
       footer
 ================= */
+
+.footer {
+  background-image: url(./images/bgk-footer.png);
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.footer-body {
+  color: oldlace;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  max-width: 900%;
+}
+
+.footer-body .tow h3 {
+  margin-bottom: 30px;
+}
+
+.footer-body .tow p {
+  margin-bottom: 30px;
+}
+
+.footer-body p {
+  color: oldlace;
+  width: 250px;
+}
+
+.three {
+  position: relative;
+}
+.footer-body .three p {
+  border: white solid 1px;
+  width: 180px;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  text-align: center;
+  opacity: 50%;
+}
+
+#paper {
+  border: wheat 1px solid;
+  position: absolute;
+  left: 189px;
+  top: 55px;
+
+  background-color: oldlace;
+  opacity: 50%;
+  border-radius: 3px;
+}
+
+.p-nav {
+  display: flex;
+  justify-content: space-around;
+  color: oldlace;
+}
+
+.p-nav nav {
+  position: relative;
+  right: 110px;
+}
+
+.p-nav nav a {
+  margin: 10px;
+}
+.p-nav p {
+  position: relative;
+  left: 100px;
+}
 
 /* ===============
       Media Q
@@ -694,9 +831,5 @@ header p {
 
   /* ===============
       footer
-  ================= */
-
-  /* ===============
-      Media Q
   ================= */
 }
